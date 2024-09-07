@@ -6,17 +6,11 @@
   </head>
   <body>
     <p class="title">Rock Paper Scissors</p>
-    <button onclick="
-      playGame('rock');
-    " class="move-button"><img src="rock-emoji.png" alt="rock" class="move-icon"></button>
+    <button class="move-button js-rock-button"><img src="rock-emoji.png" alt="rock" class="move-icon"></button>
 
-    <button onclick="
-      playGame('paper');
-    " class="move-button"><img src="paper-emoji.png" alt="paper" class="move-icon"></button>
+    <button class="move-button js-paper-button"><img src="paper-emoji.png" alt="paper" class="move-icon"></button>
 
-    <button onclick="
-      playGame('scissors');
-    " class="move-button"><img src="scissors-emoji.png" alt="scissors" class="move-icon"></button>
+    <button class="move-button js-scissors-button"><img src="scissors-emoji.png" alt="scissors" class="move-icon"></button>
   <p class="js-status" class="result"></p>
   <p class="js-moves">
     You 
@@ -35,7 +29,11 @@
     " class="reset-score-button">Reset Score</button>
 
         <button class="auto-play-button" onclick="autoPlay();
-        ">Auto Play </button>
+        ">Auto Play </button><br><br>
+        <p>Press "r" to Rock <br><br>
+           Press "p" to Paper<br><br>
+           Press "s" to Scissors</p>
+         
     <script src="Rock-Paper-Scissors.js">
     </script>
   </body>
